@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            background-color: #f0f2f5;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #1c2434;
+            color: white;
+            padding: 20px;
+        }
+        .sidebar h2 { margin-top: 0; font-size: 1.2rem; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { padding: 12px 10px; cursor: pointer; border-radius: 4px; }
+        .sidebar li:hover { background-color: #334155; }
+        .content {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+        .metrics {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .metric-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 5px solid #10b981;
+        }
+        .metric-box h3 { margin: 0; font-size: 0.9rem; color: #64748b; }
+        .metric-box p { margin: 10px 0 0 0; font-size: 1.8rem; font-weight: bold; color: #1e293b; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Panel de Sistema</h2>
+        <ul>
+            <li>🏠 Resumen General</li>
+            <li>📊 Estadísticas</li>
+            <li>⚙️ Configuración</li>
+            <li>👤 Usuarios</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Bienvenido de nuevo</h1>
+        <p>Monitoreo en tiempo real del estado del proyecto.</p>
+
+        <div class="metrics">
+            <div class="metric-box">
+                <h3>Tareas Completadas</h3>
+                <p>18 / 20</p>
+            </div>
+            <div class="metric-box" style="border-left-color: #3b82f6;">
+                <h3>Eficiencia Operativa</h3>
+                <p>94.2%</p>
+            </div>
+            <div class="metric-box" style="border-left-color: #ef4444;">
+                <h3>Bugs Críticos</h3>
+                <p>0</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
